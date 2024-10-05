@@ -1,0 +1,23 @@
+.card{
+    height: 200px;
+    width: 400px;
+    align-items: center;
+    margin: auto;
+    border-color: blue;
+    
+    
+}
+
+h1{
+    justify-content: center;
+    text-align: center;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+}
+body{
+    justify-content: center;
+}

@@ -35,6 +35,17 @@ app.use(session({
 
 // Route for home
 app.get('/', (req, res) => {
+    res.redirect('/home'); // Redirect to /home
+});
+
+// Route for home page
+app.get("/home", (req, res) => {
+    res.render("home");
+});
+
+
+// Route for home
+app.get('/', (req, res) => {
     if (req.session.user) {
         res.redirect('/books');
     } else {
@@ -96,6 +107,7 @@ app.get('/books', async (req, res) => {
     const result = await pool.query('SELECT * FROM books');
     res.render('books', { books: result.rows, user: req.session.user });
 });
+
 
 // Route to add a new book (for librarians only)
 app.post('/books', async (req, res) => {

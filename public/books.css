@@ -1,0 +1,19 @@
+h1{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+.logout{
+    text-align: right;
+    float: right;
+}
+.book-list{
+
+margin: 10px;
+}
+
+.card{
+    border-color: blue;
+}

@@ -1,0 +1,12 @@
+h1{
+    text-align: center;
+}
+.container{
+    justify-content: center;
+}
+
+.login-btn{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
